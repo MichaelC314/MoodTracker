@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const LandingPage = () => {
   return (
     <div className="container">
-      <h1>Mood App</h1>
+      <h1>Kibun Keeper</h1> {/*Kibun means mood/feeling in Japanese and Korean */}
       <div className="button-group">
         <Link to="/enter-mood">
           <button className="mood-btn">Enter Mood</button>
