@@ -1,0 +1,225 @@
+.analyze-mood-page {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.analyze-mood-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.select-mood-section {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.mood-select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.selected-mood-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
+.mood-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mood-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.mood-rating {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-weight: bold;
+}
+
+.mood-date {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.mood-notes {
+  background-color: #f9f9f9;
+  border-left: 4px solid #6a11cb;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border-radius: 0 8px 8px 0;
+}
+
+.mood-details {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.mood-details div {
+  margin-bottom: 8px;
+}
+
+.analyze-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.analyze-btn, .api-key-btn, .save-key-btn, .cancel-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.analyze-btn {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  flex: 1;
+}
+
+.analyze-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(106, 17, 203, 0.2);
+}
+
+.analyze-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.api-key-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.api-key-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.api-key-section {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.api-key-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.api-key-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.save-key-btn {
+  background-color: #4caf50;
+  color: white;
+  flex: 1;
+}
+
+.save-key-btn:hover {
+  background-color: #43a047;
+}
+
+.save-key-btn:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.analysis-results {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.analysis-results h3 {
+  color: #333;
+  margin-top: 0;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.analysis-content {
+  line-height: 1.7;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(106, 17, 203, 0.1);
+  border-left-color: #6a11cb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

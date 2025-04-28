@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/enter-mood" element={<EnterMood />} />
         <Route path="/mood-history" element={<MoodHistory />} />
-        <Route path="/analyze-mood" element={<AnalyzeMood />} />
+        <Route path="/analyze-mood/:id?" element={<AnalyzeMood />} />
       </Routes>
     </Router>
   );
