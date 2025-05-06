@@ -27,7 +27,7 @@ class MoodLogObject {
       aiNotes: null
     };
   }
-
+  // Method to add the AI analysis notes to the mood log object
   analyze(aiAnalysis) {
     this.analysis.aiProcessed = true;
     this.analysis.aiNotes = aiAnalysis;

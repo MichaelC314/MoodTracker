@@ -164,7 +164,7 @@ const MoodHistory = () => {
                     className="analyze-btn" 
                     onClick={() => handleViewDetails(log.id)}
                   >
-                    Analyze
+                    {log.analysis?.aiProcessed ? 'View Mood' : 'Analyze'}
                   </button>
                   <button 
                     className="delete-btn" 
