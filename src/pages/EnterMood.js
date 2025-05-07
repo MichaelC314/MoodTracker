@@ -57,7 +57,7 @@ const EnterMood = () => {
     localStorage.setItem('moodLogs', JSON.stringify(updatedLogs));
     
     // Redirect to history page or clear form
-    alert('Mood logged successfully!');
+    // alert('Mood logged successfully!');
     navigate('/mood-history');
   };
 
